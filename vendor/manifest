@@ -13,7 +13,7 @@
 			"importpath": "github.com/go-mangos/mangos",
 			"repository": "https://github.com/go-mangos/mangos",
 			"vcs": "git",
-			"revision": "e3181ec4a2a556d80619da0f841e35c2007733af",
+			"revision": "2645a781e132c8f63127f0ec64318477a4dd913b",
 			"branch": "master",
 			"notests": true
 		},
@@ -21,7 +21,7 @@
 			"importpath": "github.com/gorilla/websocket",
 			"repository": "https://github.com/gorilla/websocket",
 			"vcs": "git",
-			"revision": "4201258b820c74ac8e6922fc9e6b52f71fe46f8d",
+			"revision": "cdedf21e585dae942951e34d6defc3215b4280fa",
 			"branch": "master",
 			"notests": true
 		}
