@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./lib"
+	"github.com/mrlsd/reqrep-events/lib"
 	"fmt"
 )
 

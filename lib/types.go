@@ -7,7 +7,7 @@ type EventProxy struct {
 	Event EventData
 }
 
-// EventData = data for event sending
+// EventData - data for event sending
 type EventData struct {
 	EventName string      `json:"eventName"`
 	EventId   int64       `json:"eventId"`
