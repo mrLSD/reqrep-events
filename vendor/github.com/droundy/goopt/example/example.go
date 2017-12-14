@@ -42,16 +42,20 @@ func main() {
 	defer fmt.Print("\033[0m") // defer resetting the terminal to default colors
 	switch *color {
 	case "default":
-	case "red": fmt.Print("\033[31m")
-	case "green": fmt.Print("\033[32m")
-	case "blue": fmt.Print("\033[34m")
-	default: panic("Unrecognized color!") // this should never happen!
+	case "red":
+		fmt.Print("\033[31m")
+	case "green":
+		fmt.Print("\033[32m")
+	case "blue":
+		fmt.Print("\033[34m")
+	default:
+		panic("Unrecognized color!") // this should never happen!
 	}
 	log("I have now set the color to", *color, ".")
-	for i:=0; i<*repetitions; i++ {
+	for i := 0; i < *repetitions; i++ {
 		fmt.Println("Greetings,", *username)
 		log("You have", *repetitions, "children.")
-		for _,child := range *children {
+		for _, child := range *children {
 			fmt.Println("I also greet your child, whose name is", child)
 		}
 	}

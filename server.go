@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/mrlsd/reqrep-events/lib"
 	"fmt"
+	"github.com/mrlsd/reqrep-events/lib"
 )
 
 const MQ_URL_SERVER = "tcp://127.0.0.1:40899"
@@ -12,8 +12,10 @@ func main() {
 		Url:  MQ_URL_SERVER,
 		Name: "test-mq-server",
 	}
+	lib.LogInfo("starting event server: ", ev.Name)
+
 	if err := lib.ServeEvents(ev, eventHandler); err != nil {
-		fmt.Printf("Failed start server: %s", err)
+		lib.LogError("Failed start server: %s", err)
 	}
 }
 

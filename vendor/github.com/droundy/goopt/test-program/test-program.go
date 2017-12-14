@@ -4,8 +4,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	goopt "github.com/droundy/goopt"
+	"strings"
 )
 
 var amVerbose = goopt.Flag([]string{"--verbose"}, []string{},

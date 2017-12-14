@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/mrlsd/reqrep-events/lib"
 	"fmt"
+	"github.com/mrlsd/reqrep-events/lib"
 )
 
 const MQ_URL_CLIENT = "tcp://127.0.0.1:40899"
 
 func main() {
+	lib.LogInfo("Starting REQREP client")
 	evd := lib.EventData{
 		EventId:   100,
 		EventName: "Test",
